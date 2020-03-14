@@ -1,0 +1,11 @@
+OBJS=core.o
+PROG=sim
+CFLAGS=-O2 -Wall -ggdb3
+LDFLAGS=-rdynamic -ggdb3
+LIBS=-ldl -pthread -lX11
+
+$(PROG): $(OBJS)
+	$(CC) -o $@ $(LDFLAGS) $< $(LIBS)
+
+clean:
+	rm -f $(PROG) $(OBJS)

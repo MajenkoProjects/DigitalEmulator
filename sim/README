@@ -1,0 +1,5 @@
+This is the core for the Digital Emulator.
+
+It takes a configuration script (test.ini provided) which details
+the busses to create, the devices to load, configuration for the
+devices, and how to connect them all together.
